@@ -25,7 +25,10 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'no-unused-vars': 'off',
     'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error'
+    'react/jsx-uses-vars': 'error',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off'
   }
 }
