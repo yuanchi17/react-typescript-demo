@@ -2,13 +2,13 @@ import React, { useContext } from 'react'
 import { AppContext } from '../contexts/app-context'
 
 function Home () {
-  const { count } = useContext(AppContext)
+  const context = useContext(AppContext)
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>{count}</p>
-        {/* <button onClick={() => { setCount(c => c + 1) }}>按我</button> */}
+        <p>{context?.count}</p>
+        {/* <button onClick={() => {  }}>按我</button> */}
       </header>
     </div>
   )

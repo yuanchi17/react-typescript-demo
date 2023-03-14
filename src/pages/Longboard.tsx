@@ -9,7 +9,7 @@ function Longboard () {
     <div className="App">
       <header className="App-header">
         <p>/Longboard</p>
-        <p>{}</p>
+        <p>{context?.count}</p>
       </header>
     </div>
   )
