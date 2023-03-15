@@ -1,5 +1,7 @@
-import React, { useContext } from 'react'
 import { AppContext } from '../contexts/app-context'
+import { count } from 'console'
+import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
 
 function Home () {
   const context = useContext(AppContext)
@@ -7,8 +9,11 @@ function Home () {
   return (
     <div className="App">
       <header className="App-header">
+        <p>Home</p>
         <p>{context?.count}</p>
-        {/* <button onClick={() => {  }}>按我</button> */}
+        <button onClick={() => { context?.setDefaultState({ count: context?.count + 1 }) }}>+++</button>
+        <Link to='/'>Home</Link>
+        <Link to='/longboard'>longboard</Link>
       </header>
     </div>
   )
