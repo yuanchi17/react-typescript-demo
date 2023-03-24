@@ -7,4 +7,5 @@ module.exports = {
   endOfLine: 'lf',
   arrowParens: 'avoid',
   useTabs: false,
+  bracketSpacing: true
 }
